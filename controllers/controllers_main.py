@@ -21,7 +21,7 @@ class MainForm(QtWidgets.QMainWindow):
 
 def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
-    window = MainForm()  # Создаём объект класса MyWin
+    window = MainForm()  # Создаём объект класса MainForm()
     window.show()  # Показываем окно
     app.exec_()  # и запускаем приложение
 
