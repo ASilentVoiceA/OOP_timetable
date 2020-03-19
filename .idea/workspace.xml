@@ -4,10 +4,7 @@
     <list default="true" id="078d0206-9370-48f2-aa9c-97ecae99a0d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/controllers_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controllers_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uis/dialog_add.ui" beforeDir="false" afterPath="$PROJECT_DIR$/uis/dialog_add.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uis/timetable.ui" beforeDir="false" afterPath="$PROJECT_DIR$/uis/timetable.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/gui_dialog_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/gui_dialog_add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/gui_dialog_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/gui_dialog_update.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/gui_timetable.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/gui_timetable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,36 +117,44 @@
       <option name="project" value="LOCAL" />
       <updated>1584555000641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Удаление файла views.gui_timetable.py.&#10;Создание функций open_dialog_add и open_dialog_update,открывающих gui_dialog_add.py и gui_dialog_update.py. И подключение их к кнопкам add_button и update_button.">
+      <created>1584618131056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584618131056</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
     <MESSAGE value="добавление комментария" />
     <MESSAGE value="удаление файла views.gui_timetable.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="удаление файла views.gui_timetable.py" />
+    <MESSAGE value="Удаление файла views.gui_timetable.py.&#10;Создание функций open_dialog_add и open_dialog_update,открывающих gui_dialog_add.py и gui_dialog_update.py. И подключение их к кнопкам add_button и update_button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Удаление файла views.gui_timetable.py.&#10;Создание функций open_dialog_add и open_dialog_update,открывающих gui_dialog_add.py и gui_dialog_update.py. И подключение их к кнопкам add_button и update_button." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1584554996051">
+    <state x="94" y="62" width="760" height="629" key="CommitChangelistDialog2" timestamp="1584628874391">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584554996051" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1584617813831">
+    <state x="94" y="62" width="760" height="629" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584628874391" />
+    <state width="686" height="218" key="GridCell.Tab.0.bottom" timestamp="1584628570161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584617813831" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1584617813829">
+    <state width="686" height="218" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584628570161" />
+    <state width="686" height="218" key="GridCell.Tab.0.center" timestamp="1584628570161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584617813829" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1584617813829">
+    <state width="686" height="218" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584628570161" />
+    <state width="686" height="218" key="GridCell.Tab.0.left" timestamp="1584628570161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584617813829" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1584617813830">
+    <state width="686" height="218" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584628570161" />
+    <state width="686" height="218" key="GridCell.Tab.0.right" timestamp="1584628570161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584617813830" />
+    <state width="686" height="218" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584628570161" />
     <state width="686" height="220" key="GridCell.Tab.1.bottom" timestamp="1584560200458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -166,9 +171,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="686" height="220" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584560200458" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584553547320">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584618206549">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584553547320" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584618206549" />
   </component>
 </project>
