@@ -12,7 +12,7 @@ class MainForm(QtWidgets.QMainWindow):
         self.ui.add_button.clicked.connect(self.open_dialog_add)
         self.ui.update_button.clicked.connect(self.open_dialog_update)
         # очистка содержимого таблицы при клике на кнопку.
-        self.ui.clear_button.clicked.connect(self.clear)
+        self.ui.clear_button.clicked.connect(self.clear_tableWidget)
         # добавление столбцов
         self.ui.tableWidget.setColumnCount(6)
         self.ui.tableWidget.setRowCount(3)
