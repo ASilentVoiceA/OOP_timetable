@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'dialog_add.ui'
+# Form implementation generated from reading ui file 'dialog_update.ui'
 #
 # Created by: PyQt5 UI code generator 5.14.1
 #
@@ -10,23 +10,17 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class UiDialogUpdate(object):
+class Ui_Dialog_Update(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(381, 263)
+        Dialog.resize(382, 273)
         self.buttonBox = QtWidgets.QDialogButtonBox(Dialog)
-        self.buttonBox.setGeometry(QtCore.QRect(210, 230, 156, 23))
+        self.buttonBox.setGeometry(QtCore.QRect(190, 240, 181, 21))
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
         self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
-        self.label = QtWidgets.QLabel(Dialog)
-        self.label.setGeometry(QtCore.QRect(9, 9, 71, 16))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
         self.horizontalLayoutWidget = QtWidgets.QWidget(Dialog)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(9, 34, 361, 191))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(10, 40, 361, 191))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -91,24 +85,25 @@ class UiDialogUpdate(object):
         self.horizontalLayout_5.addWidget(self.lineEdit_6)
         self.verticalLayout.addLayout(self.horizontalLayout_5)
         self.horizontalLayout.addLayout(self.verticalLayout)
+        self.label = QtWidgets.QLabel(Dialog)
+        self.label.setGeometry(QtCore.QRect(10, 10, 71, 16))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
 
         self.retranslateUi(Dialog)
         self.buttonBox.accepted.connect(Dialog.accept)
         self.buttonBox.rejected.connect(Dialog.reject)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
-        Dialog.setTabOrder(self.lineEdit_3, self.lineEdit_2)
-        Dialog.setTabOrder(self.lineEdit_2, self.lineEdit)
-        Dialog.setTabOrder(self.lineEdit, self.lineEdit_4)
-        Dialog.setTabOrder(self.lineEdit_4, self.lineEdit_5)
-        Dialog.setTabOrder(self.lineEdit_5, self.lineEdit_6)
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.label.setText(_translate("Dialog", "Введите"))
+        Dialog.setWindowTitle(_translate("Dialog", "Редактирование"))
         self.label_4.setText(_translate("Dialog", "День недели"))
         self.label_3.setText(_translate("Dialog", "Номер урока"))
         self.label_2.setText(_translate("Dialog", "Дисциплина"))
         self.label_6.setText(_translate("Dialog", "Класс"))
         self.label_5.setText(_translate("Dialog", "Кабинет"))
         self.label_7.setText(_translate("Dialog", "Учитель"))
+        self.label.setText(_translate("Dialog", "Введите"))

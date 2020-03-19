@@ -10,7 +10,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class UiDialogAdd(object):
+class Ui_Dialog_Add(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(381, 263)
@@ -104,7 +104,7 @@ class UiDialogAdd(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Добавление"))
         self.label.setText(_translate("Dialog", "Введите"))
         self.label_4.setText(_translate("Dialog", "День недели"))
         self.label_3.setText(_translate("Dialog", "Номер урока"))

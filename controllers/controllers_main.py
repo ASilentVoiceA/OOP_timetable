@@ -7,16 +7,24 @@ import sys
 class MainForm(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         QtWidgets.QWidget.__init__(self, parent)
-        self.ui = UiMainWindow()
+        self.ui = Ui_MainWindow()
         self.ui.setupUi(self)  # Это нужно для инициализации дизайна
         self.ui.add_button.clicked.connect(self.open_dialog_add)
         self.ui.update_button.clicked.connect(self.open_dialog_update)
 
     def open_dialog_add(self):
-        print("add")
+        dialog = QtWidgets.QDialog()
+        dialog.ui = Ui_Dialog_Add()
+        dialog.ui.setupUi(dialog)
+        dialog.exec_()
+        dialog.show()
 
     def open_dialog_update(self):
-        print("update")
+        dialog = QtWidgets.QDialog()
+        dialog.ui = Ui_Dialog_Update()
+        dialog.ui.setupUi(dialog)
+        dialog.exec_()
+        dialog.show()
 
 
 def main():
