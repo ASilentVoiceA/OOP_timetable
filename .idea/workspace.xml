@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="078d0206-9370-48f2-aa9c-97ecae99a0d5" name="Default Changelist" comment="Задание текста заголовкам tableWidget.&#10;Реализация очистки содержимого tableWidget при клике на кнопку clear_button через метод clear_tableWidget.">
+    <list default="true" id="078d0206-9370-48f2-aa9c-97ecae99a0d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controllers_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controllers_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/gui_timetable.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/gui_timetable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../first" />
   </component>
   <component name="RecentsManager">
@@ -41,7 +44,7 @@
       <recent name="D:\Users\Liza\PycharmProjects\lab_timetable\controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.database">
+  <component name="RunManager" selected="Python.controllers_main">
     <configuration name="controllers_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab_timetable" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,6 +58,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controllers/controllers_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="database (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab_timetable" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_timetable" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_timetable/database.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,8 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.database" />
         <item itemvalue="Python.controllers_main" />
+        <item itemvalue="Python.database" />
+        <item itemvalue="Python.database (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584629280393</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="создание базы данных DbTimetable">
+      <created>1584721844120</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584721844120</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -174,41 +206,42 @@
     <MESSAGE value="удаление файла views.gui_timetable.py" />
     <MESSAGE value="Удаление файла views.gui_timetable.py.&#10;Создание функций open_dialog_add и open_dialog_update,открывающих gui_dialog_add.py и gui_dialog_update.py. И подключение их к кнопкам add_button и update_button." />
     <MESSAGE value="Задание текста заголовкам tableWidget.&#10;Реализация очистки содержимого tableWidget при клике на кнопку clear_button через метод clear_tableWidget." />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание текста заголовкам tableWidget.&#10;Реализация очистки содержимого tableWidget при клике на кнопку clear_button через метод clear_tableWidget." />
+    <MESSAGE value="создание базы данных DbTimetable" />
+    <option name="LAST_COMMIT_MESSAGE" value="создание базы данных DbTimetable" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584721006202">
+    <state x="453" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585496304466">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="453" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1584721006202" />
-    <state x="107" y="36" width="760" height="629" key="CommitChangelistDialog2" timestamp="1584721598402">
+    <state x="453" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585496304466" />
+    <state x="389" y="21" width="760" height="629" key="CommitChangelistDialog2" timestamp="1584721841999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="107" y="36" width="760" height="629" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584721598402" />
-    <state x="129" y="55" key="DiffContextDialog" timestamp="1584721700544">
+    <state x="389" y="21" width="760" height="629" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584721841999" />
+    <state x="129" y="55" key="DiffContextDialog" timestamp="1584721811084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="129" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1584721700544" />
+    <state x="129" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1584721811084" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1584721372350">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584721372350" />
-    <state width="672" height="218" key="GridCell.Tab.0.bottom" timestamp="1584721501785">
+    <state width="683" height="108" key="GridCell.Tab.0.bottom" timestamp="1585502819750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="218" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584721501785" />
-    <state width="672" height="218" key="GridCell.Tab.0.center" timestamp="1584721501784">
+    <state width="683" height="108" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585502819750" />
+    <state width="683" height="108" key="GridCell.Tab.0.center" timestamp="1585502819749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="218" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584721501784" />
-    <state width="672" height="218" key="GridCell.Tab.0.left" timestamp="1584721501784">
+    <state width="683" height="108" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585502819749" />
+    <state width="683" height="108" key="GridCell.Tab.0.left" timestamp="1585502819749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="218" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584721501784" />
-    <state width="672" height="218" key="GridCell.Tab.0.right" timestamp="1584721501785">
+    <state width="683" height="108" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585502819749" />
+    <state width="683" height="108" key="GridCell.Tab.0.right" timestamp="1585502819749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="218" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584721501785" />
+    <state width="683" height="108" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585502819749" />
     <state width="686" height="220" key="GridCell.Tab.1.bottom" timestamp="1584560200458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -225,9 +258,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="686" height="220" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584560200458" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584721761933">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584721882275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584721761933" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584721882275" />
   </component>
 </project>
