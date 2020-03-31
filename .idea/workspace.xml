@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="078d0206-9370-48f2-aa9c-97ecae99a0d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/db_timetable/fillDb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/controllers_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controllers_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/gui_timetable.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/gui_timetable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +108,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="fillDb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab_timetable" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_timetable" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_timetable/fillDb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="gui_timetable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab_timetable" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,6 +153,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.controllers_main" />
+        <item itemvalue="Python.fillDb" />
         <item itemvalue="Python.database" />
         <item itemvalue="Python.database (1)" />
       </list>
@@ -197,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584721844120</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="заполнение базы данных DbTimetable.&#10;добавление элементов в comboBox.">
+      <created>1585502994638</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585502994639</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,17 +236,18 @@
     <MESSAGE value="Удаление файла views.gui_timetable.py.&#10;Создание функций open_dialog_add и open_dialog_update,открывающих gui_dialog_add.py и gui_dialog_update.py. И подключение их к кнопкам add_button и update_button." />
     <MESSAGE value="Задание текста заголовкам tableWidget.&#10;Реализация очистки содержимого tableWidget при клике на кнопку clear_button через метод clear_tableWidget." />
     <MESSAGE value="создание базы данных DbTimetable" />
-    <option name="LAST_COMMIT_MESSAGE" value="создание базы данных DbTimetable" />
+    <MESSAGE value="заполнение базы данных DbTimetable.&#10;добавление элементов в comboBox." />
+    <option name="LAST_COMMIT_MESSAGE" value="заполнение базы данных DbTimetable.&#10;добавление элементов в comboBox." />
   </component>
   <component name="WindowStateProjectService">
     <state x="453" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585496304466">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585496304466" />
-    <state x="389" y="21" width="760" height="629" key="CommitChangelistDialog2" timestamp="1584721841999">
+    <state x="389" y="21" width="760" height="629" key="CommitChangelistDialog2" timestamp="1585502991498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="21" width="760" height="629" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584721841999" />
+    <state x="389" y="21" width="760" height="629" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585502991498" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1584721811084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -226,41 +256,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584721372350" />
-    <state width="683" height="108" key="GridCell.Tab.0.bottom" timestamp="1585502819750">
+    <state width="1345" height="102" key="GridCell.Tab.0.bottom" timestamp="1585668828219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="683" height="108" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585502819750" />
-    <state width="683" height="108" key="GridCell.Tab.0.center" timestamp="1585502819749">
+    <state width="1345" height="102" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585668828219" />
+    <state width="1345" height="102" key="GridCell.Tab.0.center" timestamp="1585668828219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="683" height="108" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585502819749" />
-    <state width="683" height="108" key="GridCell.Tab.0.left" timestamp="1585502819749">
+    <state width="1345" height="102" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585668828219" />
+    <state width="1345" height="102" key="GridCell.Tab.0.left" timestamp="1585668828219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="683" height="108" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585502819749" />
-    <state width="683" height="108" key="GridCell.Tab.0.right" timestamp="1585502819749">
+    <state width="1345" height="102" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585668828219" />
+    <state width="1345" height="102" key="GridCell.Tab.0.right" timestamp="1585668828219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="683" height="108" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585502819749" />
-    <state width="686" height="220" key="GridCell.Tab.1.bottom" timestamp="1584560200458">
+    <state width="1345" height="102" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585668828219" />
+    <state width="1345" height="2" key="GridCell.Tab.1.bottom" timestamp="1585561944158">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="686" height="220" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584560200458" />
-    <state width="686" height="220" key="GridCell.Tab.1.center" timestamp="1584560200458">
+    <state width="1345" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585561944158" />
+    <state width="1345" height="2" key="GridCell.Tab.1.center" timestamp="1585561944157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="686" height="220" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584560200458" />
-    <state width="686" height="220" key="GridCell.Tab.1.left" timestamp="1584560200458">
+    <state width="1345" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585561944157" />
+    <state width="1345" height="2" key="GridCell.Tab.1.left" timestamp="1585561944157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="686" height="220" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584560200458" />
-    <state width="686" height="220" key="GridCell.Tab.1.right" timestamp="1584560200458">
+    <state width="1345" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585561944157" />
+    <state width="1345" height="2" key="GridCell.Tab.1.right" timestamp="1585561944157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="686" height="220" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584560200458" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584721882275">
+    <state width="1345" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585561944157" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585503002486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584721882275" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585503002486" />
+    <state x="0" y="0" width="699" height="572" key="dock-window-1" timestamp="1585557649428">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" width="699" height="572" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1585557649428" />
   </component>
 </project>
