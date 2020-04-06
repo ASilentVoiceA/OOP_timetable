@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="078d0206-9370-48f2-aa9c-97ecae99a0d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db_timetable/fillDb.py" afterDir="false" />
+    <list default="true" id="078d0206-9370-48f2-aa9c-97ecae99a0d5" name="Default Changelist" comment="создание метода fill_table для заполнения таблицы элементами из базы данных.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/controllers_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controllers_main.py" afterDir="false" />
     </list>
@@ -32,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../first" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab_timetable_old/OOP_timetable-develop" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585502994639</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="создание метода fill_table для заполнения таблицы элементами из базы данных.">
+      <created>1585669087829</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585669087830</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -237,61 +243,62 @@
     <MESSAGE value="Задание текста заголовкам tableWidget.&#10;Реализация очистки содержимого tableWidget при клике на кнопку clear_button через метод clear_tableWidget." />
     <MESSAGE value="создание базы данных DbTimetable" />
     <MESSAGE value="заполнение базы данных DbTimetable.&#10;добавление элементов в comboBox." />
-    <option name="LAST_COMMIT_MESSAGE" value="заполнение базы данных DbTimetable.&#10;добавление элементов в comboBox." />
+    <MESSAGE value="создание метода fill_table для заполнения таблицы элементами из базы данных." />
+    <option name="LAST_COMMIT_MESSAGE" value="создание метода fill_table для заполнения таблицы элементами из базы данных." />
   </component>
   <component name="WindowStateProjectService">
     <state x="453" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585496304466">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585496304466" />
-    <state x="389" y="21" width="760" height="629" key="CommitChangelistDialog2" timestamp="1585502991498">
+    <state x="606" y="29" width="760" height="629" key="CommitChangelistDialog2" timestamp="1586153124240">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="21" width="760" height="629" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585502991498" />
+    <state x="606" y="29" width="760" height="629" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586153124240" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1584721811084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1584721811084" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1584721372350">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1586149747083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584721372350" />
-    <state width="1345" height="102" key="GridCell.Tab.0.bottom" timestamp="1585668828219">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586149747083" />
+    <state width="1345" height="102" key="GridCell.Tab.0.bottom" timestamp="1586152856729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="102" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585668828219" />
-    <state width="1345" height="102" key="GridCell.Tab.0.center" timestamp="1585668828219">
+    <state width="1345" height="102" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586152856729" />
+    <state width="1345" height="102" key="GridCell.Tab.0.center" timestamp="1586152856728">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="102" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585668828219" />
-    <state width="1345" height="102" key="GridCell.Tab.0.left" timestamp="1585668828219">
+    <state width="1345" height="102" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586152856728" />
+    <state width="1345" height="102" key="GridCell.Tab.0.left" timestamp="1586152856728">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="102" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585668828219" />
-    <state width="1345" height="102" key="GridCell.Tab.0.right" timestamp="1585668828219">
+    <state width="1345" height="102" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586152856728" />
+    <state width="1345" height="102" key="GridCell.Tab.0.right" timestamp="1586152856729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="102" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585668828219" />
-    <state width="1345" height="2" key="GridCell.Tab.1.bottom" timestamp="1585561944158">
+    <state width="1345" height="102" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586152856729" />
+    <state width="1345" height="2" key="GridCell.Tab.1.bottom" timestamp="1585669257485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585561944158" />
-    <state width="1345" height="2" key="GridCell.Tab.1.center" timestamp="1585561944157">
+    <state width="1345" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585669257485" />
+    <state width="1345" height="2" key="GridCell.Tab.1.center" timestamp="1585669257484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585561944157" />
-    <state width="1345" height="2" key="GridCell.Tab.1.left" timestamp="1585561944157">
+    <state width="1345" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585669257484" />
+    <state width="1345" height="2" key="GridCell.Tab.1.left" timestamp="1585669257484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585561944157" />
-    <state width="1345" height="2" key="GridCell.Tab.1.right" timestamp="1585561944157">
+    <state width="1345" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585669257484" />
+    <state width="1345" height="2" key="GridCell.Tab.1.right" timestamp="1585669257484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585561944157" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585503002486">
+    <state width="1345" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585669257484" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586153049321">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585503002486" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586153049321" />
     <state x="0" y="0" width="699" height="572" key="dock-window-1" timestamp="1585557649428">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

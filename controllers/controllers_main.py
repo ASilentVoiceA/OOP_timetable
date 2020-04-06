@@ -18,6 +18,7 @@ class MainForm(QtWidgets.QMainWindow):
         self.ui.update_button.clicked.connect(self.open_dialog_update)
         # очистка содержимого таблицы при клике на кнопку.
         self.ui.clear_button.clicked.connect(self.clear_tableWidget)
+        self.ui.find_button.clicked.connect(self.find_table)
 
         with db_session:
             self.ui.comboBox_3.addItems(select(d.name for d in Discipline))
@@ -33,7 +34,6 @@ class MainForm(QtWidgets.QMainWindow):
     # заполнение таблицы
     def fill_table(self):
         self.ui.tableWidget.clear()
-        # self.ui.tableWidget.setRowCount(0)
 
         labels = ['День недели', 'Номер урока', 'Дисциплина', 'Класс', 'Кабинет', 'Учитель']
 
@@ -54,26 +54,39 @@ class MainForm(QtWidgets.QMainWindow):
                 self.ui.tableWidget.setItem(row, 4, QTableWidgetItem(cabinet.full_cabinet))
                 self.ui.tableWidget.setItem(row, 5, QTableWidgetItem(teacher.full_name))
 
+    def find_table(self):
+        pass
+        # for item in self.ui.tableWidget.selectedItems():
+        #     print(item.text())
+
     def open_dialog_add(self):
-        dialog = QtWidgets.QDialog()
-        dialog.ui = Ui_Dialog_Add()
-        dialog.ui.setupUi(dialog)
-        dialog.exec_()
-        dialog.show()
+        self.add_window = AddForm(self)
+        self.add_window.show()
+
 
     def open_dialog_update(self):
-        dialog = QtWidgets.QDialog()
-        dialog.ui = Ui_Dialog_Update()
-        dialog.ui.setupUi(dialog)
-        dialog.exec_()
-        dialog.show()
+        self.update_window = UpdateForm(self)
+        self.update_window.show()
 
+
+class AddForm(QtWidgets.QDialog):
+    def __init__(self, parent=None):
+        QtWidgets.QWidget.__init__(self, parent)
+        self.add_window = Ui_Dialog_Add()
+        self.add_window.setupUi(self)
+
+class UpdateForm(QtWidgets.QDialog):
+    def __init__(self, parent=None):
+        QtWidgets.QWidget.__init__(self, parent)
+        self.update_window = Ui_Dialog_Update()
+        self.update_window.setupUi(self)
+        #self.update_window.lineEdit_3.setText(Ui_MainWindow.tableWidget.selectedItems()[0].text())
+        #self.update_window.lineEdit_3.setText(MainForm.fill_line_update_form)
 
 def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
     window = MainForm()  # Создаём объект класса MainForm()
     window.show()  # Показываем окно
-    window.fill_table()
     app.exec_()  # и запускаем приложение
 
 
